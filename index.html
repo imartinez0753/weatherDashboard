@@ -19,6 +19,138 @@
 		<title>Weather Dashboard</title>
 	</head>
 	<body>
+		<nav class="navbar navbar-light bg-light">
+			<span class="navbar-brand mb-0 h1 mx-auto font-weight-bold"
+				><h1 class="display-4">Weather Dashboard</h1></span
+			>
+		</nav>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<form>
+						<div class="form-group">
+							<label class="mb-0 font-weight-bold" for="citySearch"
+								>Search for a city:</label
+							>
+
+							<input
+								type="text"
+								class="form-control mr-sm-2"
+								id="cityInput"
+								placeholder="search"
+							/>
+							<button class="btn btn-primary my-2 my-sm-0" type="button">
+								<svg
+									class="bi bi-search"
+									width="1em"
+									height="1em"
+									viewBox="0 0 16 16"
+									fill="currentColor"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"
+									/>
+									<path
+										fill-rule="evenodd"
+										d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
+									/>
+								</svg>
+							</button>
+						</div>
+					</form>
+					<br />
+					<br />
+					<br />
+					<ul class="list-group">
+						<li class="list-group-item">Cras justo odio</li>
+						<li class="list-group-item">Dapibus ac facilisis in</li>
+						<li class="list-group-item">Morbi leo risus</li>
+						<li class="list-group-item">Porta ac consectetur ac</li>
+						<li class="list-group-item">Vestibulum at eros</li>
+					</ul>
+
+					<div></div>
+				</div>
+
+				<div class="col-sm-9">
+					<div>
+						<div class="card text-wrap mt-3">
+							<div class="card-body text-wrap">
+								<h3>
+									Current Weather
+									<svg
+										class="bi bi-cloud"
+										width="1em"
+										height="1em"
+										viewBox="0 0 16 16"
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M4.887 7.2l-.964-.165A2.5 2.5 0 1 0 3.5 12h10a1.5 1.5 0 0 0 .237-2.981L12.7 8.854l.216-1.028a4 4 0 1 0-7.843-1.587l-.185.96zm9.084.341a5 5 0 0 0-9.88-1.492A3.5 3.5 0 1 0 3.5 13h9.999a2.5 2.5 0 0 0 .394-4.968c.033-.16.06-.324.077-.49z"
+										/>
+									</svg>
+								</h3>
+								<br />
+								<br />
+								<ul style="list-style: none;">
+									<li>one</li>
+									<li>two</li>
+									<li>three</li>
+								</ul>
+								<form class="form-inline">
+									<div class="card text-wrap mr-1" style="width: 8rem;">
+										<div class="card-body">
+											This is some text within a card body.
+										</div>
+									</div>
+									<div class="card" style="width: 8rem;">
+										<div class="card-body">
+											This is some text within a card body.
+										</div>
+									</div>
+									<div class="card" style="width: 8rem;">
+										<div class="card-body">
+											This is some text within a card body.
+										</div>
+									</div>
+									<div class="card" style="width: 8rem;">
+										<div class="card-body">
+											This is some text within a card body.
+										</div>
+									</div>
+									<div class="card" style="width: 8rem;">
+										<div class="card-body">
+											This is some text within a card body.
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- <form>  
+				<div class="form-group">
+                    <label for="search">Search for a city:</label>
+					<input
+						type="text"
+						class="form-control col-sm-3 float-left"
+						id="search"
+						placeholder="search"/>
+                    </div>
+            </form>
+                    <button class="btn btn-primary col-sm-1" type="button">Button</button>
+                    <div class="col-sm-9"></div>
+				</div>
+			 -->
+
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script
