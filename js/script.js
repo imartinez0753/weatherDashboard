@@ -4,10 +4,11 @@ $("#poop").on("click", function () {
 	console.log("hit");
 	var cityName = $("#cityInput").val();
 	var cityResult = $("<button>");
+
 	cityResult.addClass("list-group-item");
 	cityResult.text(cityName);
 	$("#cityUl").append(cityResult);
-	$("h3").text(cityName + " " + moment().format("llll"));
+	$("h3").text(cityName + ": " + moment().format("llll"));
 
 	// console.log(inputText);
 
@@ -19,6 +20,9 @@ $("#poop").on("click", function () {
 		method: "GET",
 	}).then(function (response) {
 		console.log(response);
+		var tempature = (response.main.temp * 1.8 - 459.67).toFixed(2);
+		console.log(tempature);
+		$("#tempature").text("Tempature: " + tempature);
 	});
 	console.log($("#cityInput").val());
 });
