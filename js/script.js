@@ -27,9 +27,9 @@ $(document).ready(function () {
 			// lon.push(lonEl);
 			// lat.push(latEl);
 			console.log(tempature);
-			$("#tempature").text("Tempature: " + tempature);
-			$("#humidity").text("Humidity: " + humidity);
-			$("#windSpeed").text("Wind speed is: " + windSpeed);
+			$("#tempature").text("Tempature: " + tempature + " F°");
+			$("#humidity").text("Humidity: " + humidity + "%");
+			$("#windSpeed").text("Wind speed is: " + windSpeed + " MPH");
 			// $("#uvIndex").text("Uv Index: " + uvIndex);
 			var uvIndex =
 				"http://api.openweathermap.org/data/2.5/uvi?appid=6f57cdea4243d1500ab921ec9947fe41&lat=" +
@@ -64,45 +64,55 @@ $(document).ready(function () {
 
 				$("#day1").text(currentTime);
 				$("#temp1").text(
-					"Temp: " + (forecast.list[0].main.temp * 1.8 - 459.67).toFixed(2)
+					"Temp: " +
+						(forecast.list[0].main.temp * 1.8 - 459.67).toFixed(2) +
+						" F°"
 				);
-				$("#humid1").text("Humidity: " + forecast.list[0].main.humidity);
+				$("#humid1").text("Humidity: " + forecast.list[0].main.humidity + "%");
 				//-----------------------------------------------------------------
 				var time2 = forecast.list[1].dt;
 				var currentTime2 = moment.unix(time2).format("L");
 				console.log(currentTime2);
 				$("#day2").text(currentTime2);
 				$("#temp2").text(
-					"Temp: " + (forecast.list[1].main.temp * 1.8 - 459.67).toFixed(2)
+					"Temp: " +
+						(forecast.list[1].main.temp * 1.8 - 459.67).toFixed(2) +
+						" F°"
 				);
-				$("#humid2").text("Humidity: " + forecast.list[1].main.humidity);
+				$("#humid2").text("Humidity: " + forecast.list[1].main.humidity + "%");
 				//----------------------------------------------------------------
 				var time3 = forecast.list[2].dt;
 				var currentTime3 = moment.unix(time3).format("L");
 				console.log(currentTime);
 				$("#day3").text(currentTime3);
 				$("#temp3").text(
-					"Temp: " + (forecast.list[2].main.temp * 1.8 - 459.67).toFixed(2)
+					"Temp: " +
+						(forecast.list[2].main.temp * 1.8 - 459.67).toFixed(2) +
+						" F°"
 				);
-				$("#humid3").text("Humidity: " + forecast.list[2].main.humidity);
+				$("#humid3").text("Humidity: " + forecast.list[2].main.humidity + "%");
 				//--------------------------------------------------------------------
 				var time4 = forecast.list[3].dt;
 				var currentTime4 = moment.unix(time4).format("L");
 				console.log(currentTime4);
 				$("#day4").text(currentTime4);
 				$("#temp4").text(
-					"Temp: " + (forecast.list[3].main.temp * 1.8 - 459.67).toFixed(2)
+					"Temp: " +
+						(forecast.list[3].main.temp * 1.8 - 459.67).toFixed(2) +
+						" F°"
 				);
-				$("#humid4").text("Humidity: " + forecast.list[3].main.humidity);
+				$("#humid4").text("Humidity: " + forecast.list[3].main.humidity + "%");
 				//----------------------------------------------------------------------
 				var time5 = forecast.list[4].dt;
 				var currentTime5 = moment.unix(time5).format("L");
 				console.log(currentTime5);
 				$("#day5").text(currentTime5);
 				$("#temp5").text(
-					"Temp: " + (forecast.list[4].main.temp * 1.8 - 459.67).toFixed(2)
+					"Temp: " +
+						(forecast.list[4].main.temp * 1.8 - 459.67).toFixed(2) +
+						" F°"
 				);
-				$("#humid5").text("Humidity: " + forecast.list[4].main.humidity);
+				$("#humid5").text("Humidity: " + forecast.list[4].main.humidity + "%");
 			});
 		});
 	}
@@ -159,9 +169,9 @@ $(document).ready(function () {
 			// lon.push(lonEl);
 			// lat.push(latEl);
 			console.log(tempature);
-			$("#tempature").text("Tempature: " + tempature);
-			$("#humidity").text("Humidity: " + humidity);
-			$("#windSpeed").text("Wind speed is: " + windSpeed);
+			$("#tempature").text("Tempature: " + tempature + " F°");
+			$("#humidity").text("Humidity: " + humidity + "%");
+			$("#windSpeed").text("Wind speed is: " + windSpeed + " MPH");
 			// $("#uvIndex").text("Uv Index: " + uvIndex);
 			var uvIndex =
 				"http://api.openweathermap.org/data/2.5/uvi?appid=6f57cdea4243d1500ab921ec9947fe41&lat=" +
@@ -196,45 +206,55 @@ $(document).ready(function () {
 
 				$("#day1").text(currentTime);
 				$("#temp1").text(
-					"Temp: " + (forecast.list[0].main.temp * 1.8 - 459.67).toFixed(2)
+					"Temp: " +
+						(forecast.list[0].main.temp * 1.8 - 459.67).toFixed(2) +
+						" F°"
 				);
-				$("#humid1").text("Humidity: " + forecast.list[0].main.humidity);
+				$("#humid1").text("Humidity: " + forecast.list[0].main.humidity + "%");
 				//-----------------------------------------------------------------
 				var time2 = forecast.list[1].dt;
 				var currentTime2 = moment.unix(time2).format("L");
 				console.log(currentTime2);
 				$("#day2").text(currentTime2);
 				$("#temp2").text(
-					"Temp: " + (forecast.list[1].main.temp * 1.8 - 459.67).toFixed(2)
+					"Temp: " +
+						(forecast.list[1].main.temp * 1.8 - 459.67).toFixed(2) +
+						" F°"
 				);
-				$("#humid2").text("Humidity: " + forecast.list[1].main.humidity);
+				$("#humid2").text("Humidity: " + forecast.list[1].main.humidity + "%");
 				//----------------------------------------------------------------
 				var time3 = forecast.list[2].dt;
 				var currentTime3 = moment.unix(time3).format("L");
 				console.log(currentTime);
 				$("#day3").text(currentTime3);
 				$("#temp3").text(
-					"Temp: " + (forecast.list[2].main.temp * 1.8 - 459.67).toFixed(2)
+					"Temp: " +
+						(forecast.list[2].main.temp * 1.8 - 459.67).toFixed(2) +
+						" F°"
 				);
-				$("#humid3").text("Humidity: " + forecast.list[2].main.humidity);
+				$("#humid3").text("Humidity: " + forecast.list[2].main.humidity + "%");
 				//--------------------------------------------------------------------
 				var time4 = forecast.list[3].dt;
 				var currentTime4 = moment.unix(time4).format("L");
 				console.log(currentTime4);
 				$("#day4").text(currentTime4);
 				$("#temp4").text(
-					"Temp: " + (forecast.list[3].main.temp * 1.8 - 459.67).toFixed(2)
+					"Temp: " +
+						(forecast.list[3].main.temp * 1.8 - 459.67).toFixed(2) +
+						" F°"
 				);
-				$("#humid4").text("Humidity: " + forecast.list[3].main.humidity);
+				$("#humid4").text("Humidity: " + forecast.list[3].main.humidity + "%");
 				//----------------------------------------------------------------------
 				var time5 = forecast.list[4].dt;
 				var currentTime5 = moment.unix(time5).format("L");
 				console.log(currentTime5);
 				$("#day5").text(currentTime5);
 				$("#temp5").text(
-					"Temp: " + (forecast.list[4].main.temp * 1.8 - 459.67).toFixed(2)
+					"Temp: " +
+						(forecast.list[4].main.temp * 1.8 - 459.67).toFixed(2) +
+						" F°"
 				);
-				$("#humid5").text("Humidity: " + forecast.list[4].main.humidity);
+				$("#humid5").text("Humidity: " + forecast.list[4].main.humidity + "%");
 			});
 		});
 
