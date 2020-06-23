@@ -45,9 +45,9 @@ $(document).ready(function () {
 				$("#uvIndex").text("Uv Index: " + uvIndex);
 			});
 
-			var forecast =
-				"api.openweathermap.org/data/2.5/forecast?q={city name}&appid={your api key}" +
-				"api.openweathermap.org/data/2.5/forecast?id={city ID}&appid={your api key}";
+			// var forecast =
+			// "api.openweathermap.org/data/2.5/forecast?q={city name}&appid={your api key}" +
+			// "api.openweathermap.org/data/2.5/forecast?id={city ID}&appid={your api key}";
 			// console.log(cityName);
 			$.ajax({
 				url:
@@ -148,6 +148,7 @@ $(document).ready(function () {
 		cityResult.addClass("list-group-item");
 		cityResult.text(cityName);
 		$("#cityUl").append(cityResult);
+
 		$("h3").text(cityName + ": " + moment().format("llll"));
 
 		// console.log(inputText);
@@ -166,12 +167,19 @@ $(document).ready(function () {
 
 			var lonEl = response.coord.lon;
 			var latEl = response.coord.lat;
+			var imgSpan = $("<i>");
+			var weatherImg = response.weather[0].icon;
+			imgSpan.attr(
+				"src",
+				"http://openweathermap.org/img/wn/" + weatherImg + "@2x.png"
+			);
 			// lon.push(lonEl);
 			// lat.push(latEl);
 			console.log(tempature);
 			$("#tempature").text("Tempature: " + tempature + " F°");
 			$("#humidity").text("Humidity: " + humidity + "%");
 			$("#windSpeed").text("Wind speed is: " + windSpeed + " MPH");
+			$("h3").append(imgSpan);
 			// $("#uvIndex").text("Uv Index: " + uvIndex);
 			var uvIndex =
 				"http://api.openweathermap.org/data/2.5/uvi?appid=6f57cdea4243d1500ab921ec9947fe41&lat=" +
